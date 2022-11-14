@@ -156,7 +156,7 @@
             this.Controls.Add(this.listBox1_gyümölcsök);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Gyümölcsök adatai";
+            this.Text = "Gyümölcök adatai";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
