@@ -40,6 +40,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_modosit = new System.Windows.Forms.Button();
+            this.btn_torol = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -52,9 +54,12 @@
             this.listBox1_gyümölcsök.Name = "listBox1_gyümölcsök";
             this.listBox1_gyümölcsök.Size = new System.Drawing.Size(134, 450);
             this.listBox1_gyümölcsök.TabIndex = 0;
+            this.listBox1_gyümölcsök.SelectedIndexChanged += new System.EventHandler(this.listBox1_gyümölcsök_SelectedIndexChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_torol);
+            this.groupBox1.Controls.Add(this.btn_modosit);
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.be);
             this.groupBox1.Controls.Add(this.textBox3_egysegar);
@@ -147,6 +152,26 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "ID:";
             // 
+            // btn_modosit
+            // 
+            this.btn_modosit.Location = new System.Drawing.Point(109, 309);
+            this.btn_modosit.Name = "btn_modosit";
+            this.btn_modosit.Size = new System.Drawing.Size(130, 23);
+            this.btn_modosit.TabIndex = 20;
+            this.btn_modosit.Text = "Módosít";
+            this.btn_modosit.UseVisualStyleBackColor = true;
+            this.btn_modosit.Click += new System.EventHandler(this.btn_modosit_Click);
+            // 
+            // btn_torol
+            // 
+            this.btn_torol.Location = new System.Drawing.Point(109, 356);
+            this.btn_torol.Name = "btn_torol";
+            this.btn_torol.Size = new System.Drawing.Size(130, 23);
+            this.btn_torol.TabIndex = 21;
+            this.btn_torol.Text = "Töröl";
+            this.btn_torol.UseVisualStyleBackColor = true;
+            this.btn_torol.Click += new System.EventHandler(this.btn_torol_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,6 +203,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_modosit;
+        private System.Windows.Forms.Button btn_torol;
     }
 }
 
